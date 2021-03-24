@@ -11,15 +11,15 @@ const app = express();
 app.get('/usuario', [verificaToken, verificaAdmin_Role], (req, res) => {
 
 
-    let desde = req.query.desde || 0;
-    desde = Number(desde);
+    // let desde = req.query.desde || 0;
+    // desde = Number(desde);
 
-    let limite = req.query.limite || 5;
-    limite = Number(limite);
+    // let limite = req.query.limite || 5;
+    // limite = Number(limite);
 
     Usuario.find()
-        .skip(desde)
-        .limit(limite)
+        // .skip(desde)
+        // .limit(limite)
         .exec((err, usuarios) => {
 
             if (err) {
