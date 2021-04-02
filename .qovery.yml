@@ -1,0 +1,15 @@
+---
+application:
+  name: "api-pochos-store"
+  project: "Pochos-Store-API"
+  organization: "QoveryCommunity"
+databases:
+- type: "MONGODB"
+  name: "pochosStore"
+  version: "4.2"
+routers:
+- name: "main-api-pochos-store"
+  routes:
+  - application_name: "api-pochos-store"
+    paths:
+    - "/*"
